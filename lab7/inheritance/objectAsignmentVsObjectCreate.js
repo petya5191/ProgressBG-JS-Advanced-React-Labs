@@ -33,7 +33,8 @@ let obj1 = {
 // TODO: why not work
 let obj2 = Object.create(obj1, {
 	'id':{
-		"value": obj1.id
+		"value": obj1.id,
+		"enumerable": true // TODO/Done (Defaults to false)
 	}
 } );
 
