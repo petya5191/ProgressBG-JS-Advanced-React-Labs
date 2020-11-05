@@ -14,6 +14,7 @@ let wine1 = {
 	}
 }
 
+
 beer1.price[0] = 999;
 
 beer1.setPrice([3.2, 1.0, 2.3]);
