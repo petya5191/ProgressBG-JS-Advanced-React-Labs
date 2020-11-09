@@ -7,13 +7,16 @@
 // const : can not redeclare
 // let : can be redeclared
 
-// TODO: why x is not global:
-// function foo() {
-// 	 x = 1;
-// 	console.log(`x in foo: ${x}`); // 1
-// }
 
-// console.log(`x in main: ${x}`); // ReferenceError: x is not defined
+function foo() {
+	// create alwayes a global variable
+	x = 1;
+	console.log(`x in foo: ${x}`); // 1
+}
+
+foo();
+
+console.log(`x in main: ${x}`); // ReferenceError: x is not defined
 
 // // var VS let/const in scope context:
 // {
@@ -42,8 +45,6 @@ const user = {
 	'name': 'Pesho',
 	'pass': '123'
 }
-
-user = 4;
 user.pass = 'alalaba'; // error ?
 
 
