@@ -1,8 +1,5 @@
-// TODO: why work as normal esc. seq.
-let re = /a\f/; // <af>
-let str = `a\f`;
-console.log( str );
-console.log( `----`);
+let re = /[a-z]/;
+let str = `A`;
 
 
 if( re.test(str) ){
