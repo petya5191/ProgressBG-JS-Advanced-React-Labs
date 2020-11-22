@@ -10,7 +10,8 @@ function foo(userName, age ) {
 
 	// age = age || 0;
 
-	// TODO:check why not work in nodejs
+	// not working in nodejs
+	// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR_assignment
  	age ||= 0;
 	// age || (age = 0)
 
