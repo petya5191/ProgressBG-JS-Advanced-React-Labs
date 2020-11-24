@@ -12,7 +12,7 @@ const myModule = (function(){
 
 	// API
 	const showConfig =  function(){
-		for( const key in config ){
+		for( key in config ){
 			console.log(`${key}: ${config[key]}`)
 		}
 	}
@@ -24,14 +24,9 @@ const myModule = (function(){
 	return {
 		// from ES6 (Shorthand property names)
 		showConfig,
-		changeConfig,
-		deleteConfig: function () {
-			config = {};
-		}
+		changeConfig
 	}
 })();
-
-
 
 myModule.showConfig();
 myModule.changeConfig("maxLength",1024 );

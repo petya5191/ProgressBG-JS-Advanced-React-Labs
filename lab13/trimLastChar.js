@@ -5,6 +5,7 @@ let str = "";
 for (let i = 0; i < arr.length; i++) {
 	str += arr[i]+'-'
 }
+
 // todo=>done: remove trailing '-' with regex
 str = str.replace(/-$/,"");
 
