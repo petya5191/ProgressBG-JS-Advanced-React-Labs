@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>contacts </title>
+</head>
+<body>
+	<h1>Contacts</h1>
+	<a href="/cgi-bin/reg.php">/cgi-bin/reg.php</a>
+	<form action="/cgi-bin/reg.php" method="GET">
+		<label>userName: <input type="text" name="userName"></label>
+		<button type="submit">Send</button>
+	</form>
+</body>
+</html>
+
+<!-- http://127.0.0.1:5500/lab14/HTTP_Basics/pages/contacts.html
+POST:
+http://127.0.0.1:5500/cgi-bin/reg.php => data: "userName=Ada"
+http://127.0.0.1:5500/cgi-bin/reg.php
+
+GET:
+http://127.0.0.1:5500/cgi-bin/reg.php?userName=Ada
+ -->
