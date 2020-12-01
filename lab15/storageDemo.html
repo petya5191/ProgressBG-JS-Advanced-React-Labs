@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>cookiesDemo </title>
+</head>
+<body>
+
+	<script>
+		let data = {
+			'product1': 'Book1',
+			'product2': 'Book2',
+		}
+
+		// save to Session storage:
+		const sessionStorage = window.sessionStorage;
+		sessionStorage.setItem('productName',data.productName );
+
+
+		// save to Local storage:
+		const localStorage = window.localStorage;
+		// localStorage.setItem('productName',data.productName );
+		for(let key in data){
+			console.log( data[key] );
+			localStorage.setItem(key, data[key]);
+		}
+
+
+
+
+
+	</script>
+</body>
+</html>
